@@ -27,6 +27,6 @@ I've also Re-Designed most of the projects with my own Custom CSS code.
 
 **Credits:**
 
-:tw-270f: Wes Bos's 30 Day Vanilla JavaScript Challenge https://javascript30.com/
-:tw-1f30c: Images are taken from https://unsplash.com/
-:tw-1f431: Cat Image API: https://aws.random.cat/
+- :jigsaw: Wes Bos's 30 Day Vanilla JavaScript Challenge https://javascript30.com/
+- :desert_island: Images are taken from https://unsplash.com/
+- :cat2: Cat Image API: https://aws.random.cat/
