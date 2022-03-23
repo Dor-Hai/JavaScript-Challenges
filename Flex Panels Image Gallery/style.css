@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+* {
+    transition: all .3s ease-in-out;
+}
+
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.panel {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 20%;
+}
+
+.panels {  
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.active {
+    flex-grow: 3;
+}
+
+.panels::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.panels:nth-child(1) {
+    background-image: url('./images/cow.jpg');
+}
+
+.panels:nth-child(2) {
+    background-image: url('./images/deer.jpg');  
+}
+
+.panels:nth-child(3) {
+    background-image: url('./images/panda.jpg');  
+}
+
+.panels:nth-child(4) {
+    background-image: url('./images/koala.jpg');  
+}
+
+.panels:nth-child(5) {
+    background-image: url('./images/flamingo.jpg');  
+}
+
+
+.panels p {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    z-index: 1;
+    margin: 4em 0;
+}
+
+.panels p.middle {
+    font-size: 3em;
+}
+
+.panels.active p.middle {
+    transform: scale(2);
+}
+
+.panels p.top, .panels p.bottom {
+    opacity: 0;
+}
+
+.panels.active p.top {
+    animation: fadeDown .3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.panels.active p.bottom {
+    animation: fadeUp .3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeUp {
+    from { transform: translateY(50px) }
+    to { opacity: 1; transform: translateY(0) }
+}
+
+@keyframes fadeDown {
+    from { transform: translateY(-50px) }
+    to { opacity: 1; transform: translateY(0) }
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-image: url('./images/felix-dubois-robert-CuEvrPd3NYc-unsplash.jpg');
+    background-size: cover;
+}
+
+canvas {
+    border: 1px solid #ededed;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.045),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.065),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.08),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.095),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.115),
+        100px 100px 80px rgba(0, 0, 0, 0.16)
+    ;
+}
+
+button {
+    margin: 1em auto 0;
+    background-color: #e400b2;
+    color: #fff;
+    border: none;
+    padding: .5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    font-size: 1em;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.045),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.065),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.08),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.095),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.115),
+        100px 100px 80px rgba(0, 0, 0, 0.16)
+    ;
+}
+
+button:hover{
+    background-color: #c20298;
+}

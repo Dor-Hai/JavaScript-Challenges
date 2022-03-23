@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+* {
+    transition: all .3s ease-in-out;
+}
+
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/city.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    padding: 3em;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.045),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.065),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.08),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.095),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.115),
+        100px 100px 80px rgba(0, 0, 0, 0.16)
+    ;
+    border-radius: 25px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 0 .2em 0;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: .7em;
+    letter-spacing: 2px;
+    margin: 0 0 1em 0;
+}
+
+form {
+    position: relative;
+}
+
+input {
+    padding: 1em;
+    color: black;
+    border-radius: 5px;
+    border: none;
+}
+
+.suggestions {
+    position: absolute;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    width: 100%;
+    padding: 0;
+}
+
+.suggestions li {
+    color: #000;
+    list-style: none;
+    font-size: .6em;
+    letter-spacing: 2px;
+    padding: 1.3em 1em;
+}
+
+.suggestions li:hover {
+    background-color: #ededed;
+}
+
+.highlight {
+    padding: .2em .1em;
+    border-radius: 5px;
+    background-color: #FFE84E;
+}

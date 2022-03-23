@@ -1,0 +1,65 @@
+:root {
+    --pin-color: rgb(88 74 68);
+}
+
+* {
+    transition: all .05s ease-in-out;
+}
+
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    padding: 5em;
+}
+
+.container {
+    display: inline-block;
+    background: #ffe5d9;
+    padding: 2em;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.pin {
+    height: 125px;
+    background-color: var(--pin-color);
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom center;
+    border-radius: 15px;
+}
+
+.hour {
+    width: 5px;
+}
+
+.minutes {
+    width: 3px;
+}
+
+.seconds {
+    width: 1px;
+}
+
+.container:after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: var(--pin-color);
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    
+}

@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Variables and JS</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Update CSS Variables with JS</h1>
+        <div class="controllers">
+            <div class="controller spacing"></div>
+                <span class="title">SPACING</span>
+                <input type="range" data-type="spacing" value="0">
+            <div class="controller blur">
+                <span class="title">BLUR</span>
+                <input type="range" data-type="blur" value="0">
+            </div>
+            <div class="controller base-color">
+                <span class="title">BASE COLOR</span>
+                <input type="color" data-type="color" value="#ededed">
+            </div>
+        </div>
+        <img src="./assets/images/red-and-black.jpg" alt="Red and Black round Fruits">
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

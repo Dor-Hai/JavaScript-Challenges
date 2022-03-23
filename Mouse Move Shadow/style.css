@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@800&display=swap');
+
+html {
+  font-family: 'Sniglet', cursive;
+}
+
+body {
+  margin: 0;
+}
+
+.hero {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  color: #252525;
+}
+
+h1 {
+  text-shadow: 10px 10px 0 rgba(255,0,0,.5), 10px -10px 0 rgba(0,255,255,.5);
+  font-size: 5em;
+}

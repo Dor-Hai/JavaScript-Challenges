@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Poppins&display=swap');
+
+* {
+    transition: all .05s ease-in-out;
+}
+
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: url('./assets/images/drum-set-dark-room-with-beautiful-lighting-snare-drum-cymbals-bass-drum.jpg');
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    padding: 5em;
+}
+
+.container {
+    display: inline-block;
+    background: #fff;
+    padding: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.key {
+    background: #fff;
+    text-align: center;
+    padding: 1em 2em;
+    margin: 1em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.letter {
+    font-family: 'New Rocker', cursive;
+    font-size: 3em;
+}
+
+.drum {
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+}
+
+.active {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #ededed;
+}
+
+.key:hover .letter {
+    transform: scale(1.2);
+}

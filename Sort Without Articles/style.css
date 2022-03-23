@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+  transition: all .1s ease-in-out;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url("./studio.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  #bands {
+    text-align: center;
+    list-style: none;
+    font-size: 1em;
+    backdrop-filter: blur(5px);
+    width: 400px;
+    margin: auto;
+    padding: 0;
+    box-shadow:
+      1.7px 2px 3.7px rgba(0, 0, 0, 0.026),
+      3.9px 4.7px 8.5px rgba(0, 0, 0, 0.037),
+      7px 8.4px 15.3px rgba(0, 0, 0, 0.046),
+      11.6px 14px 25.4px rgba(0, 0, 0, 0.054),
+      19px 23px 41.8px rgba(0, 0, 0, 0.063),
+      33.3px 40.2px 73px rgba(0, 0, 0, 0.074),
+      72px 87px 158px rgba(0, 0, 0, 0.1)
+    ;
+    color: rgb(255 247 241);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+  }
+  
+  #bands li {
+    padding: 1.2em;
+  }
+
+  #bands li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }

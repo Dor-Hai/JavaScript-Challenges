@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');
+
+html {
+    box-sizing: border-box;
+    background: url("./Images/pizza.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    transition: all .2s ease-in-out;
+  }
+  
+  .svg-wrapper {
+    fill: white;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 50%;
+    width: 200px;
+    margin: 0 auto 2em auto;
+    z-index: 1;
+    position: relative;
+    backdrop-filter: blur(8px);
+  }
+
+  svg {
+    fill: white;
+    padding: 20px;
+  }
+  
+  .wrapper {
+    border-radius: 15px;
+    position: relative;
+    padding: 2em;
+    max-width: 350px;
+    background: rgba(0,0,0, .2);
+    backdrop-filter: blur(8px);
+  }
+  
+  h2 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: .5em;
+  }
+  
+  .plates {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+    margin-bottom: 2.5em;
+  }
+  
+  .plates li {
+    border-bottom: 1px solid #ffffff2a;;
+    padding: 10px 0;
+    font-weight: 100;
+    display: flex;
+    color: #fff;
+  }
+  
+  .plates label {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .plates input {
+    display: none;
+  }
+  
+  .plates input + label:before {
+    content: "🍕";
+    margin-right: 10px;
+  }
+  
+  .plates input:checked + label:before {
+    content: "👌🏼";
+  }
+  
+  .delete {
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 3px 7px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: .6em;
+    backdrop-filter: blur(8px);
+  }
+
+  .delete:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .add-items {
+    margin-top: 20px;
+  }
+  
+  .add-items input {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 5px;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+  } 
+
+  .add-items input::placeholder {
+    color: rgba(255, 255, 255, .9);
+    opacity: 1;
+  }
+
+  .add-items input[type="submit"] {
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  } 
+
+  .add-items input[type="submit"]:hover {
+    background: rgba(0, 0, 0, 0.7);
+  } 
